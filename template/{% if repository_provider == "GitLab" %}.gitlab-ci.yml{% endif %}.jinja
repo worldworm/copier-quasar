@@ -22,6 +22,13 @@ default:
 npm_cache:
   stage: prepare
   image: $IMAGE_NODE
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - .eslintrc.cjs
+      - "**/*.vue"
+      - "**/*.ts"
+      - "**/*.js"
   tags:
     - $RUNNER_TEST
   cache:

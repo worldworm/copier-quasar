@@ -55,3 +55,8 @@ use_docker:
   help: Use Docker?
   default: true
 
+
+use_pinia:
+  type: bool
+  help: Use Pinia?
+  default: true
